@@ -1,0 +1,52 @@
+body {
+    font-family: $primary-font;
+    font-weight: 300;
+    font-size: 0.75rem;
+    background-color: $bg-color;
+    color: $primary-color;
+    line-height: 1.66;
+}
+
+// .container {
+//     max-width: 90rem;
+//     min-width: 20rem;
+//     margin-left: auto;
+//     margin-right: auto;
+//     padding: 0 6.25rem;
+
+//     @media screen and (max-width: 1280px) {
+//         padding: 0 0.625rem;
+//     }
+// }
+
+.wrapper {
+    // щоб була на всю довжину екрану
+    min-height: 100%;
+    // прибрати горизонтальний скролл, при оверфлоу хидден не працює позишен стіккі
+    overflow: clip;
+    // футтер до низу
+    display: flex;
+    flex-direction: column;
+}
+
+// дозволяемо мейн збільшуватися
+main {
+    flex: 1 1 auto;
+}
+
+.title {
+    font-size: 1.5625rem;
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+.title__medium {
+    font-size: 1.5625rem;
+    font-weight: 500;
+    line-height: 0.8;
+}
+.title__small {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.56;
+}
